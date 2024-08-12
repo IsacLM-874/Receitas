@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Receitas da Tia Jurema</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="formatos.css">
+    <style>
+        body {
+            background-color: #d2917c;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Receitas da Tia Jurema</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="receitas.html">Receitas</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="cadastro.html">Cadastro</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="container-fluid">
+        <h1 class="text-center my-4">Efetue seu Cadastro</h1>
+        <form action="mailto:seu-email@dominio.com" method="POST" enctype="text/plain" class="p-3">
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form-control" id="nome" name="nome" required>
+                </div>
+                <div class="form-group col-md-12">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="cep">CEP</label>
+                    <input type="text" class="form-control" id="cep" name="cep" required>
+                </div>
+                <div class="form-group col-md-12">
+                    <label for="rua">Rua</label>
+                    <input type="text" class="form-control" id="rua" name="rua" required>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="numero">N°</label>
+                    <input type="text" class="form-control" id="numero" name="numero" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="complemento">Complemento</label>
+                    <input type="text" class="form-control" id="complemento" name="complemento">
+                </div>
+                <div class="form-group col-md-9">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" class="form-control" id="cidade" name="cidade" required>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="uf">UF</label>
+                    <input type="text" class="form-control" id="uf" name="uf" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-dark">Cadastrar</button>
+        </form>
+    </main>
+    <footer>
+        <p class="text-center">©Jurema 2022</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
